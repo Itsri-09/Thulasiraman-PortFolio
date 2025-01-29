@@ -1,0 +1,317 @@
+header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 1000;
+}
+header .logo {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  transition: transform 0.3s;
+}
+header .logo:hover {
+  transform: scale(1.1);
+}
+header .logo .text {
+  font-size: 2rem;
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+header .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+header .nav-links li a {
+  position: relative;
+  color: white;
+  font-weight: 300;
+}
+header .nav-links li a:hover::before {
+  width: 100%;
+}
+header .nav-links li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 5px;
+  top: 25px;
+  border-radius: 1rem;
+  transition: width 0.3s;
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.about .about-container .info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+.about .about-container .info-box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.about .about-container .info-box h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.about .about-container .info-box span {
+  font-size: 2rem;
+  background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
+  background-clip: text;
+  color: transparent;
+}
+.about .about-container .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about .about-container .socials i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.about .about-container .socials i:hover {
+  transform: scale(1.1);
+}
+.about img {
+  width: 30vw;
+  border-radius: 50%;
+}
+
+.education-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.education-info .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.education-info .grid .grid-card {
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.education-info .grid .grid-card:hover {
+  transform: scale(1.02);
+  background: black;
+  color: white;
+}
+.education-info .grid .grid-card i {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.education-info .grid .grid-card span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #009dff, #ff00ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.education img {
+  width: 24vw;
+  border-radius: 3rem;
+  object-fit: cover;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.projects-grid .project-card {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 3rem;
+}
+.projects-grid .project-card:hover {
+  background: black;
+  color: white;
+  transform: translateY(-10px) scale(1.02);
+}
+.projects-grid .project-card:hover .btn {
+  border: 2px solid white;
+  color: white;
+}
+.projects-grid .project-card:hover .btn:hover {
+  border: 2px solid white;
+  background: white;
+  color: black;
+}
+.projects-grid .project-card img {
+  width: 20vw;
+  border-radius: 1rem;
+}
+.projects-grid .project-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34vw;
+  height: 35vw;
+  border: 2px solid black;
+  border-radius: 3rem;
+}
+.contact .contact-form form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.contact .contact-form form .form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact .contact-form form .form-row .form-group {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-form form .form-row .form-group input,
+.contact .contact-form form .form-row .form-group textarea {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.contact .contact-form form .form-group-textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-form form .form-group-textarea textarea {
+  width: 100%;
+}
+.contact .contact-form form button {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact .contact-form form button:hover {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style-type: none;
+}
+
+section {
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #009dff, #ff00ff);
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+.btn-group .btn {
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+}
+.btn-group .btn:hover {
+  background: black;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

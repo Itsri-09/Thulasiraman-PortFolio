@@ -1,0 +1,64 @@
+@import './assets/scss/src/variables';
+@import './assets/scss/src/header';
+@import './assets/scss/src/about';
+@import './assets/scss/src/education';
+@import './assets/scss/src/projects';
+@import './assets/scss/src/contact';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style-type: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: $second-color;
+}
+
+::-webkit-scrollbar-thumb{
+    background: $gradient-color-four;
+}
+
+.btn-group{
+    display: flex;
+    gap: 1rem;
+    .btn{
+        border-radius: 3rem;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid black;
+        cursor: pointer;
+        font-weight: 500;
+        text-wrap: nowrap;
+        transition: .2s ease-in-out;
+
+        &:hover{
+            background:$first-color;
+            color: $text-color;
+        }
+    }
+}

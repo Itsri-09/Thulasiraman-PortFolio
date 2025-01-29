@@ -1,0 +1,67 @@
+@import "./variables";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+
+header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  @include flex-center;
+  gap: 5rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  color: $text-color;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  z-index: 1000;
+
+  .logo {
+    color: $text-color;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    @include transition(transform, 0.3s);
+    &:hover {
+      transform: scale(1.1);
+    }
+    .text {
+      font-size: 2rem;
+      background: $gradient-color-one;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  .nav-links {
+    @include flex-center;
+    gap: 2rem;
+    li a {
+      position: relative;
+      color: $text-color;
+      font-weight: 300;
+      &:hover::before {
+        width: 100%;
+      }
+    }
+    li a::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      left: 0;
+      height: 5px;
+      top: 25px;
+      border-radius: 1rem;
+      @include transition(width, 0.3s);
+      background: $gradient-color-one;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import './variables';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .project-card {
+        padding: 3rem 4rem;
+        @include flex-column;
+        text-align: center;
+        gap: 1rem;
+        border: 2px solid $first-color;
+        cursor: pointer;
+        @include transition(all, 0.3s);
+        @include border-radius(3rem);
+
+        &:hover {
+            background: $first-color;
+            color: $text-color;
+            transform: translateY(-10px) scale(1.02);
+
+            .btn {
+                border: 2px solid $text-color;
+                color: $text-color;
+
+                &:hover {
+                    border: 2px solid $text-color;
+                    background: $text-color;
+                    color: $first-color;
+                }
+            }
+        }
+
+        img {
+            width: 20vw;
+            @include border-radius(1rem);
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+}
