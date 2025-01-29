@@ -55,11 +55,3 @@
     }
   }
 }
-
-.education {
-  img {
-    width: 24vw;
-    @include border-radius(3rem);
-    object-fit: cover;
-  }
-}

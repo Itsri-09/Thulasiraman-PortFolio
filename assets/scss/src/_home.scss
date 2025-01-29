@@ -1,0 +1,68 @@
+@import './variables';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin transition($property, $duration) {
+    transition: $property $duration;
+}
+
+.home {
+    @include flex-center;
+
+    .home-container {
+        @include flex-center;
+        gap: 10rem;
+
+        .info-box {
+            @include flex-column;
+            text-align: center;
+            gap: 1.5rem;
+
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 500;
+                opacity: 0.8;
+            }
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 600;
+            }
+
+            span {
+                font-size: 2rem;
+                background: $gradient-color-one;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .socials {
+            @include flex-center;
+            gap: 2rem;
+            i {
+                font-size: 2.5rem;
+                cursor: pointer;
+                @include transition(transform, .2s);
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    img {
+        width: 30vw;
+        border-radius: 50%;
+    }
+}
