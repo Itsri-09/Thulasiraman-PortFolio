@@ -1,9 +1,10 @@
-@import './assets/scss/src/variables';
-@import './assets/scss/src/header';
-@import './assets/scss/src/about';
-@import './assets/scss/src/education';
-@import './assets/scss/src/projects';
-@import './assets/scss/src/contact';
+@import './variables';
+@import './header';
+@import './about';
+@import './education';
+@import './projects';
+@import './contact';
+@import './skills';
 
 *{
     margin: 0;
@@ -47,7 +48,11 @@ section{
 .btn-group{
     display: flex;
     gap: 1rem;
+    a{
+        color: $first-color;
+    }
     .btn{
+        text-decoration: none;
         border-radius: 3rem;
         padding: 0.5rem 1.5rem;
         border: 2px solid black;
