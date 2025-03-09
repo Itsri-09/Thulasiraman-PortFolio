@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./dist/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sasikumar T</title>
+    <title>Thulasiraman K</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -17,99 +17,125 @@
   <body>
     <header class="header">
       <a href="#" class="logo">
-        <span>Sasi <span class="text">.</span></span></a
+        <span>Thulasiraman K <span class="text">.</span></span></a
       >
-      <ul class="nav-links">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#education">Education</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+      <span>
+        <button  id="btn"
+        onclick="buttonClick()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+        <ul class="nav-links" id="navbarText">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+      </span>
       <!-- <button class="cv-btn">Download Cv</button> -->
     </header>
-    <section id="home" class="home">
+
+    <!-- banner section -->
+    <section id="home" class="home section_outline">
       <div class="home-container">
-        <img src="./pics/sasi.png" alt="" />
+        <img src="./pics/33.JPG" alt="" />
         <div class="info-box">
           <div class="text">
             <h3>Hi I'm</h3>
-            <h1>Sasikumar</h1>
-            <span>Software Devloper</span>
+            <h1>Thulasiraman K</h1>
+            <span>Software Developer</span>
           </div>
           <div class="btn-group">
-            <a href="./pics/sasi.png" download class="btn">Download Cv</a>
-            <div class="btn">Contact</div>
+            <a
+              href="./pics/Thulasiraman_Dev_Resume (1).pdf"
+              download
+              class="btn"
+              >Download Cv</a
+            >
+            <a  class="btn" href="tel:+919566946801">Contact</a>
           </div>
           <div class="socials">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/Iamthulasiraman"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/thulasiraman2002/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="about" id="about">
+    <section class="about section_outline" id="about">
       <h3 class="section-title">About Me!</h3>
       <div class="about-content">
         <div>
           <h3>Hi I'm</h3>
-          <h1>Sasikumar T</h1>
+          <h1>Thulasiraman K</h1>
           <p>
-            I'm a software developer at Syncfusion. I'm passionate about
-            coding, solving problems, and continuously learning new
-            technologies.
+            A passionate and results-driven B.Tech IT graduate with a strong
+            foundation in web development, particularly within the .NET
+            framework. Enthusiastic about exploring emerging technologies,
+            particularly in Data Science, and eager to apply analytical and
+            problem-solving skills to drive impactful solutions. A quick learner
+            with a keen interest in continuously improving technical skills, and
+            adapting to the latest industry trends.
           </p>
-          <p><i class="fa-solid fa-location-dot"></i> Chennai</p>
-          <p><i class="fa-solid fa-envelope"></i> sasi1411@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Puducherry</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i> thulasiraman02102002@gmail.com
+          </p>
         </div>
         <div class="about-img">
-          <img src="./pics/sasi.png" alt="" />
+          <img src="./pics/33.JPG" alt="" />
         </div>
       </div>
     </section>
-    <section class="education" id="education">
+    <section class="education section_outline" id="education">
       <h2 class="section-title">Education</h2>
       <div class="education-info">
         <div class="grid">
           <div class="grid-card">
             <i class="fa-solid fa-graduation-cap"></i>
-            <span>B.E in Computer Science & Engineering</span>
-            <h3>Government College of Engineering, Dharmapuri (2020 - 2024)</h3>
-            <p>CGPA: 8.39</p>
+            <div class="education_padd">
+            <span>BTech in Information Technology</span>
+            <h3>Christ collage of Engineering and Technology (2020 - 2024)</h3>
+            <p>CGPA: 7.95</p>
+            </div>
           </div>
           <div class="grid-card">
             <i class="fa-solid fa-school"></i>
-            <span>HSC</span>
-            <h3>
-              Sakthi Matric Higher Secondary School, Kaniyamoor (2019 - 2020)
-            </h3>
-            <p>Percentage: 80.66%</p>
+            <div class="education_padd">
+              <span>HSC</span>
+              <h3>Annai Raani Convent Hr. sec School (2019 - 2020)</h3>
+              <p>Percentage: 79.66%</p>
+            </div>
           </div>
           <div class="grid-card">
             <i class="fa-solid fa-school"></i>
+           <div class="education_padd">
             <span>SSLC</span>
-            <h3>
-              Sakthi Matric Higher Secondary School, Kaniyamoor (2017 - 2018)
-            </h3>
-            <p>Percentage: 90%</p>
+            <h3>Santa Clara Convent Hr.sec School (2017 - 2018)</h3>
+            <p>Percentage: 90.1%</p>
+           </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="skills" id="skills">
+    <section class="skills section_outline" id="skills">
       <h2 class="section-title">My Skills</h2>
       <div class="skill-container">
         <div>
@@ -123,10 +149,6 @@
         <div>
           <span><i class="fa-brands fa-js"></i></span>
           <h3>Javascript</h3>
-        </div>
-        <div>
-          <span><i class="fa-brands fa-java"></i></span>
-          <h3>Java</h3>
         </div>
         <div>
           <span><i class="fa-brands fa-python"></i></span>
@@ -144,51 +166,141 @@
           <span><img src="./pics/sass.png" alt="" /></span>
           <h3>SASS</h3>
         </div>
+        <div>
+          <span
+            ><img src="./pics/machine-learning-icon-vector.jpg" alt=""
+          /></span>
+          <h3>Machine Learning</h3>
+        </div>
+        <div>
+          <span><img src="./pics/data analytics.jpeg" alt="" /></span>
+          <h3>Data Analysis</h3>
+        </div>
+        <div>
+          <span><img src="./pics/data-science-icon-vector.jpg" alt="" /></span>
+          <h3>Data Science</h3>
+        </div>
+        <div>
+          <span><img src="./pics/4_tableau-512.webp" alt="" /></span>
+          <h3>Tableau</h3>
+        </div>
       </div>
     </section>
-    <section class="projects" id="projects">
+    <section class="projects section_outline" id="projects">
       <h2 class="section-title">My Projects</h2>
 
       <div class="projects-grid">
         <div class="project-card">
           <img src="./pics/projects.jpeg" alt="" />
-          <h3>Artificial Intelligence Mouse</h3>
+          <h3>Cafetaria Application</h3>
           <p>
-            Designed AI mouse using OpenCV, Mediapipe, enabling finger-based
-            cursor control, improving navigation efficiency by 30%.
+            The Cafeteria Management Console Application is a C# program that
+            allows users to register, log in, and manage their cafeteria orders.
+            The system provides functionalities such as placing orders,
+            modifying orders, canceling orders, viewing order history, and
+            managing wallet balances
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <a
+              href="https://github.com/Iamthulasiraman/Cafetaria_application_C-"
+              class="btn"
+              >Github Repo</a
+            >
           </div>
         </div>
         <div class="project-card">
           <img src="./pics/projects.jpeg" alt="" />
-          <h3>Medical Plant Identification</h3>
+          <h3>Age and Gender Detection app</h3>
           <p>
-            Developed AI system using GAN, CNN, and classification algorithms,
-            achieving 95% accuracy in medicinal plant identification.
+            The Age and Gender Detection App leverages deep learning to
+            accurately predict a person's age and gender from an uploaded image.
+            With a remarkable 97% accuracy rate, this app offers fast and
+            reliable results, making it ideal for security systems, personalized
+            marketing, and user profiling applications.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <a
+              href="https://github.com/Iamthulasiraman/Age_and_Gender_Detection_app"
+              class="btn"
+              >Github Repo</a
+            >
           </div>
         </div>
         <div class="project-card">
           <img src="./pics/projects.jpeg" alt="" />
-          <h3>Guess Me! Web</h3>
+          <h3>Customer Segmentation</h3>
           <p>
-            Created a number-guessing web app, boosting user engagement by 30%,
-            achieving 80% guess accuracy for enhanced interactivity.
+            In marketing, market segmentation is the process of dividing a broad
+            consumer or business market, normally consisting of existing
+            sub-groups of consumed potential customers, into (known as segments)
+            based on some type of shared characteristics.
           </p>
           <div class="btn-group">
-            <div class="btn">Live Demo</div>
-            <div class="btn">Github Repo</div>
+            <a
+              href="https://github.com/Iamthulasiraman/Customer-Segmentation_using_K-Means_Algorithm"
+              class="btn"
+              >Github Repo</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <section class="contact" id="contact">
+
+    <section class="experience section_outline" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div>
+        <h2>Syncfusion</h2>
+        <h3>Software Engineer</h3>
+        <br />
+        <p>
+          • Proficient in C# programming language with experience creating
+          Console Applications. <br />
+          • Implemented custom lists, grid views, and binary search algorithms
+          in software applications.<br />
+          • Hands-on experience with HTML, CSS, JavaScript, Type Script, and Web
+          API for web-based application development.
+        </p>
+      </div>
+    </section>
+
+    <section class="internship section_outline" id="internship">
+      <h2 class="section-title">Internship</h2>
+      <div>
+        <h2>Feynn Labs</h2>
+        <h3>Machine Learning Intern</h3>
+        <br />
+        <p>
+          • Improved prediction accuracy 50% using machine learning models and
+          data analysis.<br />
+          • Utilized Python, NumPy, and Pandas for efficient data processing and
+          model evaluation.<br />
+          • Conducted exploratory data analysis (EDA) on large datasets to
+          extract actionable insights.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div>
+        <h2>Null class</h2>
+        <h3>Data science Developer Intern</h3>
+        <br />
+        <p>
+          • Gained hands-on experience in Machine Learning and Deep Learning
+          concepts, focusing on data preprocessing, model building, and
+          evaluation techniques.<br />
+          • Developed an Age and Gender Detection App using deep learning
+          frameworks, achieving 97% accuracy in predicting age and gender from
+          uploaded images.<br />
+          • Applied techniques such as Convolutional Neural Networks (CNNs) for
+          image classification tasks, improving model performance through
+          hyperparameter tuning.<br />
+          • Enhanced skills in data handling, model deployment, and real-time
+          prediction to build an efficient and user-friendly application.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact section_outline" id="contact">
       <h3 class="section-title">Contact Me</h3>
       <div class="contact-form">
         <form action="">
@@ -251,6 +363,28 @@
         </form>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="footer_content">
+          <p class="footer_text">copyrights &copy; <span id="year">0</span> All Rights Reserved</p>
+          <p class="footer_text">Designed by Thulasiraman K</p>
+        </div>
+    </footer>
+
+    <script>
+      const d = new Date();
+      let year = d.getFullYear();
+      document.getElementById("year").innerHTML = year;
+
+      let list = document.getElementById('navbarText') 
+
+      function buttonClick(){
+           if(list.style.display ==="block"){
+            list.style.display ="none"
+           }
+           else{
+            list.style.display="block"
+           }
+        }
+    </script>
   </body>
 </html>

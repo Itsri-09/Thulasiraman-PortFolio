@@ -26,7 +26,7 @@
     .grid-card {
       border: 2px solid $first-color;
       @include border-radius(3rem);
-      padding: 3rem;
+      padding: 4rem;
       display: flex;
       flex-direction: column;
       align-items: baseline;

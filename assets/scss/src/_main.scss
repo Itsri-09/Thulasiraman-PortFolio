@@ -28,7 +28,7 @@ section{
 
 .section-title{
     text-align: center;
-    font-size: 4rem;
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
     font-weight: 600;
     margin-bottom: 3rem;
 }
