@@ -385,7 +385,7 @@ header .nav-links li a::before {
 }
 
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 8rem 12%;
   width: 100%;
   position: relative;
