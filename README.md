@@ -39,7 +39,6 @@ thulasi-profolio/
 │── index.html       # Main HTML file
 │── assets/          # Contains images, icons, etc.
 │── css/             # Stylesheets
-│── js/              # JavaScript files
 │── README.md        # Project Documentation
 
 💡 Contribution
